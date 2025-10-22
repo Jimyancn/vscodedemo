@@ -2,8 +2,8 @@
 #include <iostream>
 #include "prime.h"
 
-/// @brief 
-/// @return 
+/// @brief Main entry point of the program
+/// @return 0 on success, 1 on invalid input
 int main() {
     std::cout << "helloword" << std::endl;
 
