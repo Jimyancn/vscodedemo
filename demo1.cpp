@@ -7,7 +7,7 @@
 int main() {
     std::cout << "helloword" << std::endl;
 
-    std::cout << "请输入一个整数，判断是否为质数：";
+    std::cout << "请输入一个整数，判断该整数是否为质数：";
     long long x;
     if (!(std::cin >> x)) {
         std::cerr << "输入无效" << std::endl;
