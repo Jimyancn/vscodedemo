@@ -15,9 +15,9 @@ int main() {
     }
 
     if (isPrime(x))
-        std::cout << x << " 是质数" << std::endl;
+        std::cout << x << " 该整数是质数" << std::endl;
     else
-        std::cout << x << " 不是质数" << std::endl;
+        std::cout << x << " 该整数不是质数" << std::endl;
 
     return 0;
 }
