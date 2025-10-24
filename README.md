@@ -13,7 +13,7 @@
     "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
-            
+
 3.如果要调试，还要增加lanuch.json(运行->添加配置)；
 
 4.只有左边选择cpp文件，右上方才有调试按钮，如果选择其他文件，只有运行按钮；
