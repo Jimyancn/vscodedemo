@@ -8,7 +8,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}","prime.cpp",  //添加prime.cpp编译
+                "${file}","prime.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
