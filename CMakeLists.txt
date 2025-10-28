@@ -18,13 +18,15 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/libs)  # 动态库
 # 生成静态库和动态库
 add_library(prime STATIC ${CMAKE_SOURCE_DIR}/src/prime.cpp)
 add_library(prime_shared SHARED ${CMAKE_SOURCE_DIR}/src/prime.cpp)
-
+add_library(addlib STATIC ${CMAKE_SOURCE_DIR}/src/add.cpp)
+add_library(addlib_shared SHARED ${CMAKE_SOURCE_DIR}/src/add.cpp)
 # 生成可执行文件并链接动态库
 add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp)
-target_link_libraries(${PROJECT_NAME} prime_shared)
+target_link_libraries(${PROJECT_NAME} prime_shared addlib_shared)
 
 # 添加头文件搜索路径（PUBLIC 确保可执行文件和库都能访问头文件）
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_include_directories(prime PUBLIC ${CMAKE_SOURCE_DIR}/include)
 target_include_directories(prime_shared PUBLIC ${CMAKE_SOURCE_DIR}/include)
-
+target_include_directories(addlib PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(addlib_shared PUBLIC ${CMAKE_SOURCE_DIR}/include)
