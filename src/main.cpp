@@ -1,7 +1,6 @@
 //demo-123145
 #include <iostream>
 #include "prime.h"
-
 /// @brief Main entry point of the program
 /// @return 0 on success, 1 on invalid input
 int main() {

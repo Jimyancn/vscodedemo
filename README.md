@@ -1,4 +1,5 @@
 # vscodedemo
+
 1.学习vscode+git开发调试方法，git要安装MingW64工具包，才能使用GNU相关工具进行编译调试；
 
 2.终端可以选择powershell/bash等不同的工具，命令也有一定差别；
@@ -16,3 +17,11 @@
 3.如果要调试，还要增加lanuch.json(运行->添加配置)；
 
 4.只有左边选择cpp文件，右上方才有调试按钮，如果选择其他文件，只有运行按钮；
+
+5.g++ -o main.exe ../src/main.cpp ../src/prime.cpp -I../include，在build目录下
+
+6.cmake -G "MinGW Makefiles" ..    在build目录下,执行前需要清空build文件夹，根据CMakeLists.txt文件生成Makefile，windows下必须显示指定为MinGW Makefiles格式
+
+7.mingw32-make   在build目录下生成可执行文件
+
+8.7.mingw32-make   clean   清空build目录下文件，cmake自动生成就带有clean
