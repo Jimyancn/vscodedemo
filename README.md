@@ -25,3 +25,63 @@
 7.mingw32-make   在build目录下生成可执行文件
 
 8.7.mingw32-make   clean   清空build目录下文件，cmake自动生成就带有clean
+
+9.原始tasks.json
+
+{
+
+    "version": "2.0.0",
+
+    "tasks": [
+
+    {
+
+    "type": "cppbuild",
+
+    "label": "C/C++: g++.exe 生成活动文件",
+
+    "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+
+    "args": [
+
+    "-fdiagnostics-color=always",
+
+    "-g",
+
+    "${file}","prime.cpp",
+
+    "-o",
+
+    "${fileDirname}\\${fileBasenameNoExtension}.exe"
+
+    ],
+
+    "options": {
+
+    "cwd": "${fileDirname}"
+
+    },
+
+    "problemMatcher": [
+
+    "$gcc"
+
+    ],
+
+    "group": {
+
+    "kind": "build",
+
+    "isDefault": true
+
+    },
+
+    "detail": "编译器: C:\\Program Files\\mingw64\\bin\\g++.exe"
+
+    }
+
+    ]
+
+}
+
+10.
